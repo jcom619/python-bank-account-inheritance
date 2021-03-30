@@ -1,10 +1,12 @@
 # Inheritance in Python
+
 Use your knowledge of Python Classes and Python Inheritance to model several
 types of bank accounts.
 
 Create your classes in the provided `bank.py` file.
 
 ## Exercise: Write Bank Account Classes
+
 Let's practice writing classes and using inheritance by modelling different types
 of Bank accounts.
 
@@ -23,6 +25,7 @@ of Bank accounts.
     * `accumulate_interest` returns the balance of the account after calculating the accumulated interest
 
 Sample Input:
+
 ```python
 basic_account = BankAccount()
 basic_account.deposit(600)
@@ -35,7 +38,8 @@ print()
 ```
 
 Sample Output:
-```
+
+```py
 Basic account has $600
 Basic account has $583
 Basic account has $594.66
@@ -49,6 +53,7 @@ Basic account has $594.66
     account  always gets $10 added to the balance.
 
 Sample Input:
+
 ```python
 childs_account = ChildrensAccount()
 childs_account.deposit(34)
@@ -61,6 +66,7 @@ print()
 ```
 
 Sample Output:
+
 ```
 Child's account has $34
 Child's account has $17
@@ -78,6 +84,7 @@ Child's account has $27
   * Overdraft accounts don't accumulate interest if their balance is below zero, but return `False` instead.
 
 Sample Input:
+
 ```python
   overdraft_account = OverdraftAccount()
   overdraft_account.deposit(12)
@@ -89,6 +96,7 @@ Sample Input:
 ```
 
 Sample Output:
+
 ```
 Overdraft account has $12
 Overdraft account has $-28
@@ -96,6 +104,6 @@ Overdraft account has $-28
 ```
 
 ## Licensing
+
 All content is licensed under a CC­BY­NC­SA 4.0 license.
 All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
-
